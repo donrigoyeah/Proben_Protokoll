@@ -1,0 +1,48 @@
+# Programm zur Erstellung von Probennahmeprotokoll und Analyseauftrag
+# Anpassung des akkretierten chem. Labors in Ordnerstruktur Datei
+# LOGO.PNG ändern.
+# 
+
+#import NumPy as np
+
+
+
+#proj_num = input('Projektnummer eingeben:')
+#proj_head = input('Auftraggeber:')
+#proj_loc = input('Bauvorhaben:')
+#proj_date = input('Bohrdatum:')
+#proj_tru = input('Bohrfuehrer:')
+
+#proj = [proj_num, proj_head, proj_loc, proj_date, proj_tru];
+
+#print(proj)
+
+#mp_type = input('Art der Proben:')
+mp_ext = input('Probenbezeichnung/Endung:')
+
+mp_num = input('Anzahl der Mischproben:')
+
+
+MP = []
+
+EP = []
+
+
+# Erzeugung der Mischproben mit Endung
+for x in range(0,mp_num):      
+  MP.append('MP%d_%d' % (x, mp_ext))
+  #print(MP)    
+  # Anzahl der Einzelprobe der jeweiligen Mischprobe
+  EP_num = input('Anzahl der Einzelproben von MP%d_%d' % (x, mp_ext))
+  
+  # Nummerierung der Bohrsondierung der jeweiligen Einzelprobe
+  for y in range(0,EP_num):
+    BS = input('Bohrsondierungsnummer:')
+    # Nummerierung der Probennummern der Einzelrpoben
+    BS_PR = input('Probennummer:')  
+    
+    EP.append('BS%d' % BS + '/(Pr %s' % BS_PR)
+
+Total = [MP;EP]
+
+print(Total)
