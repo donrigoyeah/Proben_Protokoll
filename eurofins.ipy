@@ -46,3 +46,7 @@ for x in range(0,mp_num):
 Total = [MP;EP]
 
 print(Total)
+
+# Soll so aussehen z.B. : <-- eventuell Cell struktur?!
+# MP1_2019 = BS1/(Pr. 1 + 2)
+# MP2_2019 = BS2/(Pr. 3 + 4)
